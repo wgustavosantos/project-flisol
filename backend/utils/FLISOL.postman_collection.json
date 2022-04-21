@@ -1,0 +1,83 @@
+{
+	"info": {
+		"_postman_id": "792c955e-6805-44f9-91ed-0e729aa9e7b9",
+		"name": "FLISOL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Add employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Wenderson\",\r\n    \"lastName\": \"Santos\",\r\n    \"emailId\": \"wender.santos@cameta.ufpa.br\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/v1/employees"
+			},
+			"response": []
+		},
+		{
+			"name": "Get by ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Wenderson\",\r\n    \"lastName\": \"Santos\",\r\n    \"emailId\": \"wender.santos@cameta.ufpa.br\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/v1/employees/2"
+			},
+			"response": []
+		},
+		{
+			"name": "Update employee",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Gustavo\",\r\n    \"lastName\": \"Santos\",\r\n    \"emailId\": \"wender.santos@cameta.ufpa.br\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/v1/employees/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Update employee Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/api/v1/employees/1"
+			},
+			"response": []
+		}
+	]
+}
