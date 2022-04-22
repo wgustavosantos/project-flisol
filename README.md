@@ -20,6 +20,7 @@ Projeto desenvolvido para por em prática a construção e gerenciamento de proj
 - Backend -> Java com SpringBoot, SpringDataJP e Hibernate
 - Banco de Dados -> PostgreSQL
 
+<<<<<<< HEAD
 ## Requisitos e ferramentas para rodar o projeto
 - Java 17
 - Git e GitHub para gerenciamento de repositório
@@ -28,10 +29,13 @@ Projeto desenvolvido para por em prática a construção e gerenciamento de proj
 - Yarn - frontend (primeiro yarn install(ou add) react-scripts e depois yarn start)
 - IDE Java - backend (Recomendável Spring Tool Suite 4 (STS) ver tutorial de importação de projeto maven (Existing Maven Project))
 - VS Code
+=======
+>>>>>>> 73fe42cf97b16f9d55e07e5628860cca6c9810a9
 ## Roteiro
   ####
     1. Fazer um clone do projeto
     2. Entender rotas e configurações do banco de dados no backend
+<<<<<<< HEAD
     3. Entender e configurar rotas no frontend
     4. Implantação do backend no heroku e frontend no netlify
 ## Configurações importantes no backend
@@ -69,3 +73,6 @@ Projeto desenvolvido para por em prática a construção e gerenciamento de proj
       Publish directory: frontend/build
       Site settings -> Domain Management: (colocar o nome que você quiser)
       Deploys -> Trigger deploy
+=======
+    3. Entender e configurar rotas 
+>>>>>>> 73fe42cf97b16f9d55e07e5628860cca6c9810a9
