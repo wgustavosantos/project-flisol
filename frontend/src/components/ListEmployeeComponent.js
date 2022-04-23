@@ -32,15 +32,15 @@ const ListEmployeeComponent = () => {
 
     return (
         <div className = "container">
-            <h2 className = "text-center"> List Employees </h2>
-            <Link to = "/add-employee" className = "btn btn-primary mb-2" > Add Employee </Link>
+            <h2 className = "text-center"> Lista de funcionários </h2>
+            <Link to = "/add-employee" className = "btn btn-primary mb-2" > Adicionar </Link>
             <table className="table table-bordered table-striped">
                 <thead>
-                    <th> Employee Id </th>
-                    <th> Employee First Name </th>
-                    <th> Employee Last Name </th>
-                    <th> Employee Email Id </th>
-                    <th> Actions </th>
+                    <th> Id </th>
+                    <th> Primeiro nome </th>
+                    <th> Ultimo nome</th>
+                    <th> Endereço de e-mail </th>
+                    <th> Ações </th>
                 </thead>
                 <tbody>
                     {
@@ -52,9 +52,9 @@ const ListEmployeeComponent = () => {
                                 <td>{employee.lastName}</td>
                                 <td>{employee.emailId}</td>
                                 <td>
-                                    <Link className="btn btn-info" to={`/edit-employee/${employee.id}`} >Update</Link>
+                                    <Link className="btn btn-info" to={`/edit-employee/${employee.id}`} >Atualizar</Link>
                                     <button className = "btn btn-danger" onClick = {() => deleteEmployee(employee.id)}
-                                    style = {{marginLeft:"10px"}}> Delete</button>
+                                    style = {{marginLeft:"10px"}}> Apagar</button>
                                 </td>
                             </tr>
                         )

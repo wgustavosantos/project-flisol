@@ -50,9 +50,9 @@ const AddEmployeeComponent = () => {
     const title = () => {
 
         if(id){
-            return <h2 className = "text-center">Update Employee</h2>
+            return <h2 className = "text-center">Atualizar funcionário</h2>
         }else{
-            return <h2 className = "text-center">Add Employee</h2>
+            return <h2 className = "text-center">Adicionar funcionário</h2>
         }
     }
 
@@ -68,10 +68,10 @@ const AddEmployeeComponent = () => {
                         <div className = "card-body">
                             <form>
                                 <div className = "form-group mb-2">
-                                    <label className = "form-label"> First Name :</label>
+                                    <label className = "form-label"> Pirmeiro nome :</label>
                                     <input
                                         type = "text"
-                                        placeholder = "Enter first name"
+                                        placeholder = "Digite seu primeiro nome"
                                         name = "firstName"
                                         className = "form-control"
                                         value = {firstName}
@@ -81,10 +81,10 @@ const AddEmployeeComponent = () => {
                                 </div>
 
                                 <div className = "form-group mb-2">
-                                    <label className = "form-label"> Last Name :</label>
+                                    <label className = "form-label"> Ultimo nome :</label>
                                     <input
                                         type = "text"
-                                        placeholder = "Enter last name"
+                                        placeholder = "Digite seu ultimo nome"
                                         name = "lastName"
                                         className = "form-control"
                                         value = {lastName}
@@ -97,7 +97,7 @@ const AddEmployeeComponent = () => {
                                     <label className = "form-label"> Email Id :</label>
                                     <input
                                         type = "email"
-                                        placeholder = "Enter email Id"
+                                        placeholder = "Digite seu e-mail"
                                         name = "emailId"
                                         className = "form-control"
                                         value = {emailId}
@@ -106,8 +106,8 @@ const AddEmployeeComponent = () => {
                                     </input>
                                 </div>
 
-                                <button className = "btn btn-success" onClick = {(e) => saveOrUpdateEmployee(e)} >Submit </button>
-                                <Link to="/employees" className="btn btn-danger"> Cancel </Link>
+                                <button className = "btn btn-success" onClick = {(e) => saveOrUpdateEmployee(e)} >Confirmar </button>
+                                <Link to="/employees" className="btn btn-danger"> Cancelar </Link>
                             </form>
 
                         </div>
